@@ -1,4 +1,5 @@
 const pvitals_model = require("../models/pvitals.model");
+const uuid = require("uuid")
 
 async function HTTPGetPVitals(req, res) {
     try {
@@ -11,10 +12,10 @@ async function HTTPGetPVitals(req, res) {
 
 async function HTTPCreatePVitals(req, res) {
     try {
-        const { patientID, blood_pressure, temperature, pulse, spo2 } = req.body;
+        const {blood_pressure, temperature, pulse, spo2 } = req.body;
 
         const newPVitals = new pvitals_model({
-            patientID: patientID,
+            patientID: uuid.v4(),
             blood_pressure: blood_pressure,
             temperature: temperature,
             pulse: pulse,

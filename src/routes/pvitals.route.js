@@ -4,6 +4,6 @@ const { HTTPCreatePVitals, HTTPGetPVitals } = require("../controllers/pvitals.co
 const patientVitalsRoute = express.Router()
 
 patientVitalsRoute.get('/',HTTPGetPVitals)
-patientVitalsRoute.post('/create_patients_vitals',HTTPCreatePVitals)
+patientVitalsRoute.post('/create_patient_vitals',HTTPCreatePVitals)
 
 module.exports = patientVitalsRoute
