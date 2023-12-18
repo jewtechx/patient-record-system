@@ -25,19 +25,19 @@ All routes and endpoints together with things you need to install and the prereq
 
 1. Clone the repository:
 
-   ```json
+   ```bash
    git clone https://github.com/jewtechx/patient-record-system.git
    ```
 
 2. Change directory to project folder
 
-   ```json
+   ```bash
    cd patient-record-system
    npm install
    ```
 3. Run the server
 
-  ```json
+  ```bash
    npm run dev
   ```
 
@@ -50,7 +50,7 @@ All routes and endpoints together with things you need to install and the prereq
    - **Endpoint:** `POST /api/patients/create_patient`
 
    - **Request body:**
-     ```json
+     ```bash
      {
        "patientID": "12345",
        "surname": "Doe",
@@ -68,7 +68,7 @@ All routes and endpoints together with things you need to install and the prereq
    - **Endpoint:** `GET /api/patients`
 
    - **Response body:**
-     ```json
+   ```bash
   {
     "patientID": "12345",
     "surname": "Doe",
@@ -79,15 +79,14 @@ All routes and endpoints together with things you need to install and the prereq
     "emergency_name": "Emergency Contact",
     "contact": "9876543210",
     "relationship": "Friend"
-  },
-
+    }
      ```
 
 1. **Create Visitation**
    - **Endpoint:** `POST /api/visitations/create_visitation`
 
    - **Request body:**
-     ```json
+     ```bash
      {
       "patientID": "12345",
       "date_and_time": "2023-12-18T14:30:00",
@@ -99,7 +98,7 @@ All routes and endpoints together with things you need to install and the prereq
    - **Endpoint:** `GET /api/visitations`
 
    - **Response body:**
-     ```json
+     ```bash
   {
     "patientID": "12345",
     "date_and_time": "2023-12-18T14:30:00",
@@ -112,7 +111,7 @@ All routes and endpoints together with things you need to install and the prereq
    - **Endpoint:** `POST /api/patient_vitals/create_patient_vitals`
 
    - **Request body:**
-     ```json
+     ```bash
      {
        "patientID": "12345",
   "blood_pressure": "120/80",
@@ -126,7 +125,7 @@ All routes and endpoints together with things you need to install and the prereq
    - **Endpoint:** `GET /api/patient_vitals`
 
    - **Response body:**
-     ```json
+     ```bash
   {
      "patientID": "12345",
     "blood_pressure": "120/80",
