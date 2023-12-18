@@ -25,19 +25,19 @@ All routes and endpoints together with things you need to install and the prereq
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/your-username/patient-record-system.git
+   ```json
+   git clone https://github.com/jewtechx/patient-record-system.git
    ```
 
 2. Change directory to project folder
 
-   ```bash
+   ```json
    cd patient-record-system
    npm install
    ```
 3. Run the server
 
-  ```bash
+  ```json
    npm run dev
   ```
 
@@ -50,7 +50,7 @@ All routes and endpoints together with things you need to install and the prereq
    - **Endpoint:** `POST /api/patients/create_patient`
 
    - **Request body:**
-     ```bash
+     ```json
      {
        "patientID": "12345",
        "surname": "Doe",
@@ -68,7 +68,7 @@ All routes and endpoints together with things you need to install and the prereq
    - **Endpoint:** `GET /api/patients`
 
    - **Response body:**
-     ```bash
+     ```json
   {
     "patientID": "12345",
     "surname": "Doe",
@@ -87,7 +87,7 @@ All routes and endpoints together with things you need to install and the prereq
    - **Endpoint:** `POST /api/visitations/create_visitation`
 
    - **Request body:**
-     ```bash
+     ```json
      {
       "patientID": "12345",
       "date_and_time": "2023-12-18T14:30:00",
@@ -99,7 +99,7 @@ All routes and endpoints together with things you need to install and the prereq
    - **Endpoint:** `GET /api/visitations`
 
    - **Response body:**
-     ```bash
+     ```json
   {
     "patientID": "12345",
     "date_and_time": "2023-12-18T14:30:00",
@@ -112,7 +112,7 @@ All routes and endpoints together with things you need to install and the prereq
    - **Endpoint:** `POST /api/patient_vitals/create_patient_vitals`
 
    - **Request body:**
-     ```bash
+     ```json
      {
        "patientID": "12345",
   "blood_pressure": "120/80",
@@ -126,7 +126,7 @@ All routes and endpoints together with things you need to install and the prereq
    - **Endpoint:** `GET /api/patient_vitals`
 
    - **Response body:**
-     ```bash
+     ```json
   {
      "patientID": "12345",
     "blood_pressure": "120/80",
