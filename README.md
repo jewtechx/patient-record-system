@@ -27,3 +27,8 @@ All routes and endpoints together with things you need to install and the prereq
 
    ```bash
    git clone https://github.com/your-username/patient-record-system.git
+
+   ```bash
+   cd patient-record-system
+   npm install
+   npm run dev
