@@ -26,14 +26,14 @@ All routes and endpoints together with things you need to install and the prereq
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/jewtechx/patient-record-system.git
+      git clone https://github.com/jewtechx/patient-record-system.git
    ```
 
 2. Change directory to project folder
 
    ```bash
-   cd patient-record-system
-   npm install
+      cd patient-record-system
+      npm install
    ```
 3. Run the server
 
@@ -70,15 +70,15 @@ All routes and endpoints together with things you need to install and the prereq
    - **Response body:**
    ```bash
   {
-    "patientID": "12345",
-    "surname": "Doe",
-    "other_names": "John",
-    "gender": "Male",
-    "phone_number": 1234567890,
-    "residential_address": "123 Main St, City",
-    "emergency_name": "Emergency Contact",
-    "contact": "9876543210",
-    "relationship": "Friend"
+      "patientID": "12345",
+      "surname": "Doe",
+      "other_names": "John",
+      "gender": "Male",
+      "phone_number": 1234567890,
+      "residential_address": "123 Main St, City",
+      "emergency_name": "Emergency Contact",
+      "contact": "9876543210",
+      "relationship": "Friend"
     }
      ```
 
@@ -100,9 +100,9 @@ All routes and endpoints together with things you need to install and the prereq
    - **Response body:**
      ```bash
   {
-    "patientID": "12345",
-    "date_and_time": "2023-12-18T14:30:00",
-    "type_of_encounter": "Regular Checkup"
+        "patientID": "12345",
+        "date_and_time": "2023-12-18T14:30:00",
+        "type_of_encounter": "Regular Checkup"
   },
 
      ```
@@ -114,10 +114,10 @@ All routes and endpoints together with things you need to install and the prereq
      ```bash
      {
        "patientID": "12345",
-  "blood_pressure": "120/80",
-  "temperature": "98.6",
-  "pulse": "72",
-  "spo2": "98%"
+       "blood_pressure": "120/80",
+       "temperature": "98.6",
+       "pulse": "72",
+       "spo2": "98%"
      }
      ```
 
@@ -127,11 +127,11 @@ All routes and endpoints together with things you need to install and the prereq
    - **Response body:**
      ```bash
   {
-     "patientID": "12345",
-    "blood_pressure": "120/80",
-    "temperature": "98.6",
-    "pulse": "72",
-    "spo2": "98%"
+        "patientID": "12345",
+        "blood_pressure": "120/80",
+        "temperature": "98.6",
+        "pulse": "72",
+        "spo2": "98%"
   },
 
      ```
@@ -140,7 +140,7 @@ All routes and endpoints together with things you need to install and the prereq
 ## Examples
  - **Creaate Patient**
   `
-  {curl -X POST -H "Content-Type: application/json" -d '{
+  curl -X POST -H "Content-Type: application/json" -d '{
   "patientID": "12345",
   "surname": "Doe",
   "other_names": "John",
@@ -150,10 +150,10 @@ All routes and endpoints together with things you need to install and the prereq
   "emergency_name": "Emergency Contact",
   "contact": "9876543210",
   "relationship": "Friend"
-  }'
- http://localhost:8080/api/patients/create_patient}
+  }'``http://localhost:8080/api/patients/create_patient}`
+ 
 
-  `
+  
 
 - **Get Patients**
 
