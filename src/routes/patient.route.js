@@ -1,4 +1,5 @@
 const express = require("express")
+const { HTTPGetPatients, HTTPCreatePatients } = require("../controllers/patients.controller")
 
 const patientRoute = express.Router()
 

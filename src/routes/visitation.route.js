@@ -1,4 +1,5 @@
 const express = require("express")
+const { HTTPGetVisitations, HTTPCreateVisitations } = require("../controllers/visitation.controller")
 
 const visitationRoute = express.Router()
 

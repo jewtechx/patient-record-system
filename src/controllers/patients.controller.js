@@ -1,7 +1,5 @@
 const { default: patient_model } = require("../models/patients.model")
 
-const patients = patient_model
-
 async function HTTPGetPatients(req,res){
     const patients = await patient_model.find()
     res.status(200).json(patients)
