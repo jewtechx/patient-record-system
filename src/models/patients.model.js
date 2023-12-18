@@ -40,4 +40,4 @@ const patient = new Schema({
 })
 
 const patient_model = model("Patients",patient)
-export default patient_model 
+module.exports = patient_model 

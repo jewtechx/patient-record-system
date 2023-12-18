@@ -5,7 +5,7 @@ const visitation = new Schema({
         type:String,
         required:true
     },
-    date:{
+    date_and_time:{
         type:String,
         required:true
     },
@@ -16,4 +16,4 @@ const visitation = new Schema({
 })
 
 const visitation_model = model("visitaion",visitation)
-export default visitation_model 
+module.exports = visitation_model 

@@ -9,7 +9,15 @@ async function HTTPCreatePatients(req,res){
     const {patient_id,surname,othernames,gender,phone_number,residential_address,emergency_name,contact,relationship} = req.body
 
     const patient = new patient_model({
-        patient_id,surname,othernames,gender,phone_number,residential_address,emergency_name,contact,relationship
+        patient_id:patient_id,
+        surname:surname,
+        othernames:othernames,
+        gender:gender,
+        phone_number:phone_number,
+        residential_address:residential_address,
+        emergency_name:emergency_name,
+        contact:contact,
+        relationship:relationship
     })
 
     if(patient){

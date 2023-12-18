@@ -1,3 +1,4 @@
+const patient_model = require("../models/patients.model")
 
 
 async function HTTPGetPVitals(req,res){
@@ -5,21 +6,29 @@ async function HTTPGetPVitals(req,res){
     res.status(200).json(visitation)
 }
 
-async function HTTPCreateVisitations(req,res){
-    const {patient_id,data_and_time,type_of_encounter
+async function HTTPCreatePVitals(req,res){
+    const {patientID,
+    blood_pressure,
+    temperature,
+    pulse,
+    spo2,
     } = req.body
 
-    const pvitals = new ({
-        patient_id,data_and_time,type_of_encounter
+    const pvitals = new patient_model({
+        patientID:patientID,
+    blood_pressure:blood_pressure,
+    temperature:temperature,
+    pulse:pulse,
+    spo2:spo2,
     })
 
-    if(patient){
-        res.status(200).json({message:"Patient vitalss created successfully"})
+    if(pvitals){
+        res.status(200).json({message:"Patient vitals created successfully"})
     }else{
         res.status(500).json({error:"Internal server error"})
     }
 }
 
 module.exports = {
-    HTTPGetVisitations,HTTPCreateVisitations
+    HTTPGetPVitals,HTTPCreatePVitals
 }
