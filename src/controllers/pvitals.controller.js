@@ -14,7 +14,7 @@ async function HTTPCreateVisitations(req,res){
     })
 
     if(patient){
-        res.status(200).json({message:"Patient vitals created successfully"})
+        res.status(200).json({message:"Patient vitalss created successfully"})
     }else{
         res.status(500).json({error:"Internal server error"})
     }
